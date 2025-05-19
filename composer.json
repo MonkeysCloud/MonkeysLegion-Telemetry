@@ -1,0 +1,27 @@
+{
+  "name": "monkeyscloud/monkeyslegion-telemetry",
+  "description": "PSR-3 logging integration and generic metrics hooks for MonkeysLegion projects",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.4",
+    "psr/log": "^3.0",
+    "promphp/prometheus_client_php": "^2.14"
+  },
+  "suggest": {
+    "promphp/prometheus_client": "If you want a PrometheusMetrics adapter",
+    "php-statsd-client/php-statsd-client": "If you want a StatsDMetrics adapter"
+  },
+  "autoload": {
+    "psr-4": {
+      "MonkeysLegion\\Telemetry\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
+  }
+}
